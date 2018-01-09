@@ -21,5 +21,5 @@ RUN ln -s /srv /root/.CoinonatX
 
 EXPOSE 44678 44578
 VOLUME ["/srv"]
-ENTRYPOINT ["/usr/local/bin/coinonatxd", "-printtoconsole", "-pid=/run/coinonatxd.pid", "-datadir=/srv"]
+ENTRYPOINT ["/usr/local/bin/coinonatxd", "-printtoconsole", "-pid=/run/coinonatxd.pid", "-datadir=/srv", "-daemon=0"]
 CMD ["-server=0"]
